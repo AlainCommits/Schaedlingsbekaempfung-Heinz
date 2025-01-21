@@ -11,9 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-primary">Rohrreinigung Heinz</h3>
+            <h3 className="text-xl font-bold text-primary">Schädlingsbekämpfung Heinz</h3>
             <p className="text-muted-foreground">
-              Ihr zuverlässiger Partner für Rohrreinigung und Kanalsanierung. 
+              Ihr zuverlässiger Partner für Schädlingsbekämpfung. 
               24/7 Notdienst in Ihrer Region.
             </p>
             <div className="flex space-x-4">
@@ -64,8 +64,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-primary">Notdienst</h3>
             <p className="text-muted-foreground">
-              Verstopfung? Wasserrohrbruch? 
-              Wir sind rund um die Uhr für Sie da!
+              Schädlingsbefall? Wir sind rund um die Uhr für Sie da!
             </p>
             <Button size="lg" className="w-full" asChild>
               <Link href="tel:0157-926-430-00">
@@ -82,7 +81,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 max-w-7xl py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Rohrreinigung Heinz. Alle Rechte vorbehalten.
+              © {new Date().getFullYear()} Schädlingsbekämpfung Heinz. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6">
               {legalLinks.map((link, index) => (
@@ -103,10 +102,10 @@ export default function Footer() {
 }
 
 const quickLinks = [
-  { label: "Rohrreinigung", href: "/services/rohrreinigung" },
-  { label: "Kanalsanierung", href: "/services/kanalsanierung" },
-  { label: "Verstopfungen", href: "/services/verstopfungen" },
-  { label: "Kamerainspektion", href: "/services/kamerainspektion" },
+  { label: "Rattenbekämpfung", href: "/services/rattenbekaempfung" },
+  { label: "Bettwanzenbekämpfung", href: "/services/bettwanzenbekaempfung" },
+  { label: "Kakerlakenbekämpfung", href: "/services/kakerlakenbekaempfung" },
+  { label: "Wespenbekämpfung", href: "/services/wespenbekaempfung" },
   { label: "Preise", href: "/preise" },
   { label: "Über uns", href: "/about" }
 ]
@@ -114,7 +113,7 @@ const quickLinks = [
 const contactInfo = [
   { icon: MapPin, text: "Musterstraße 123, 12345 Stadt" },
   { icon: Phone, text: "0157-926-430-00" },
-  { icon: Mail, text: "info@rohrreinigung.de" },
+  { icon: Mail, text: "info@schaedlingsbekaempfung-heinz.de" },
   { icon: Clock, text: "24/7 Notdienst" }
 ]
 

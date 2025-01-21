@@ -17,12 +17,12 @@ export default function EmergencySection() {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              Rohrverstopfung? Wir sind sofort für Sie da!
+              Schädlingsbefall? Wir sind sofort für Sie da!
             </h2>
             
             <p className="text-lg text-muted-foreground">
-              Keine Panik bei verstopften Rohren! Unser Notfall-Team ist rund um die Uhr 
-              für Sie im Einsatz - schnell, zuverlässig und zu fairen Festpreisen.
+              Keine Panik bei Schädlingsbefall! Unser Notfall-Team ist rund um die Uhr 
+              für Sie im Einsatz - schnell, diskret und zu fairen Festpreisen.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -84,8 +84,8 @@ export default function EmergencySection() {
 const emergencyServices = [
   {
     icon: Clock,
-    title: "Notfall-Rohrreinigung",
-    description: "Sofortige Hilfe bei akuten Verstopfungen",
+    title: "Notfall-Schädlingsbekämpfung",
+    description: "Sofortige Hilfe bei akutem Schädlingsbefall",
     features: [
       "Reaktionszeit unter 30 Minuten",
       "24/7 Verfügbarkeit",
@@ -94,11 +94,11 @@ const emergencyServices = [
   },
   {
     icon: Wrench,
-    title: "Vorbeugende Wartung",
-    description: "Regelmäßige Inspektion und Reinigung",
+    title: "Vorbeugende Maßnahmen",
+    description: "Professionelle Prävention gegen Schädlingsbefall",
     features: [
-      "Professionelle Kamerainspektion",
-      "Wartungsverträge möglich",
+      "Professionelle Inspektion",
+      "Präventive Behandlung",
       "Dokumentierte Durchführung"
     ]
   }

@@ -12,14 +12,14 @@ export default function AboutSection() {
           <div className="space-y-6">
             <div className="space-y-4">
               <Badge variant="secondary" className="text-sm">
-                Ihr Experte für Rohrreinigung
+                Ihr Experte für Schädlingsbekämpfung
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                Professionelle Rohrreinigung mit Festpreisgarantie
+                Professionelle Schädlingsbekämpfung mit Festpreisgarantie
               </h2>
               <p className="text-muted-foreground text-lg">
-                24/7 Notdienst für verstopfte Rohre, Abflüsse und Kanäle. 
-                Schnell, zuverlässig und fair.
+                24/7 Notdienst für Schädlingsbefall aller Art. 
+                Schnell, zuverlässig und diskret.
               </p>
             </div>
 
@@ -42,7 +42,7 @@ export default function AboutSection() {
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
                 src="/images/r3.png"
-                alt="Professionelle Rohrreinigung im Einsatz"
+                alt="Professionelle Schädlingsbekämpfung im Einsatz"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -69,20 +69,20 @@ export default function AboutSection() {
 const benefits = [
   {
     title: "Blitzschneller 24/7 Notdienst",
-    description: "Innerhalb von 30 Minuten sind wir bei Ihnen vor Ort - auch nachts und am Wochenende."
+    description: "Innerhalb von 60 Minuten sind wir bei Ihnen vor Ort - auch nachts und am Wochenende."
   },
   {
-    title: "Modernste Rohrreinigungstechnik",
-    description: "Wir arbeiten mit hochmoderner Ausrüstung für nachhaltige und schonende Rohrreinigung."
+    title: "Modernste Schädlingsbekämpfung",
+    description: "Wir arbeiten mit hochmodernen und umweltschonenden Methoden für nachhaltige Schädlingsbekämpfung."
   },
   {
     title: "Festpreisgarantie",
-    description: "Transparente Preise ohne versteckte Kosten. Bezahlung erst nach erfolgreicher Arbeit."
+    description: "Transparente Preise ohne versteckte Kosten. Bezahlung erst nach erfolgreicher Schädlingsbekämpfung."
   }
 ]
 
 const stats = [
-  { value: "15+", label: "Jahre Erfahrung" },
-  { value: "30k+", label: "Zufriedene Kunden" },
+  { value: "20+", label: "Jahre Erfahrung" },
+  { value: "50k+", label: "Zufriedene Kunden" },
   { value: "24/7", label: "Notdienst" }
 ]

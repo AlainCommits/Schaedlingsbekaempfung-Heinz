@@ -1,4 +1,4 @@
-// components/modules/FAQSection.tsx
+// components/modules/FAQ.tsx
 import {
   Accordion,
   AccordionContent,
@@ -20,7 +20,7 @@ export default function FAQSection() {
             Häufig gestellte Fragen
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Hier finden Sie Antworten auf die wichtigsten Fragen rund um unseren Rohrreinigungsservice
+            Hier finden Sie Antworten auf die wichtigsten Fragen rund um unsere Schädlingsbekämpfung
           </p>
         </div>
 
@@ -62,9 +62,9 @@ export default function FAQSection() {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <Link href="mailto:info@rohrreinigung.de" className="w-full">
+                  <Link href="mailto:info@schaedlingsbekaempfung-heinz.de" className="w-full">
                     <Mail className="mr-2 h-5 w-5" />
-                    info@rohrreinigung.de
+                    info@schaedlingsbekaempfung-heinz.de
                   </Link>
                 </Button>
               </div>
@@ -93,8 +93,8 @@ const faqItems = [
     answer: "In der Regel sind wir innerhalb von 30 Minuten bei Ihnen. Unser 24/7 Notdienst garantiert schnelle Hilfe - auch nachts und an Feiertagen."
   },
   {
-    question: "Was kostet ein Rohrreinigungseinsatz?",
-    answer: "Wir arbeiten mit transparenten Festpreisen, die wir vor Arbeitsbeginn mit Ihnen besprechen. Die genauen Kosten hängen von der Art der Verstopfung und dem notwendigen Arbeitsaufwand ab."
+    question: "Was kostet eine Schädlingsbekämpfung?",
+    answer: "Wir arbeiten mit transparenten Festpreisen, die wir vor Arbeitsbeginn mit Ihnen besprechen. Die genauen Kosten hängen von der Art des Schädlingsbefalls und dem notwendigen Arbeitsaufwand ab."
   },
   {
     question: "Welche Zahlungsmöglichkeiten bieten Sie an?",
@@ -102,15 +102,15 @@ const faqItems = [
   },
   {
     question: "Geben Sie eine Garantie auf Ihre Arbeit?",
-    answer: "Ja, wir geben eine Zufriedenheitsgarantie auf unsere Arbeit. Sollte das Problem nach der Reinigung erneut auftreten, kommen wir kostenlos wieder."
+    answer: "Ja, wir geben eine Zufriedenheitsgarantie auf unsere Arbeit. Sollte das Problem nach der Behandlung erneut auftreten, kommen wir kostenlos wieder."
   },
   {
     question: "Welche Gebiete decken Sie ab?",
     answer: "Wir sind in der gesamten Region tätig und bieten unseren Service im Umkreis von 50 km an. Für genaue Informationen kontaktieren Sie uns bitte."
   },
   {
-    question: "Wie kann ich Rohrverstopfungen vorbeugen?",
-    answer: "Regelmäßige Wartung und richtige Nutzung sind wichtig. Wir bieten auch vorbeugende Inspektionen und Beratung zur korrekten Pflege Ihrer Rohre an."
+    question: "Wie kann ich Schädlingsbefall vorbeugen?",
+    answer: "Regelmäßige Kontrollen und richtige Präventionsmaßnahmen sind wichtig. Wir bieten auch vorbeugende Inspektionen und Beratung zur Schädlingsprävention an."
   }
 ]
 

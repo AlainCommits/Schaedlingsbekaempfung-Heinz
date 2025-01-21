@@ -18,18 +18,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Rohrreinigung | Ihr Experte',
-    template: '%s | Rohrreinigung'
+    default: 'Schädlingsbekämpfung Heinz | 24/7 Notdienst',
+    template: '%s | Schädlingsbekämpfung Heinz'
   },
-  description: 'Professionelle Rohrreinigung in Ihrer Region',
+  description: 'Professionelle Schädlingsbekämpfung ✓ 24/7 Notdienst ✓ 30 Min Reaktionszeit ✓ Festpreisgarantie ➤ Jetzt anfragen!',
+  keywords: ['Schädlingsbekämpfung', 'Kammerjäger', 'Schädlingsbekämpfer', 'Notdienst', 'Rattenbekämpfung', 'Bettwanzenbekämpfung'],
+  robots: 'index, follow',
   openGraph: {
-    title: 'Rohrreinigung | Ihr Experte',
-    description: 'Professionelle Rohrreinigung in Ihrer Region',
-    images: ['/og-image.jpg']
-  },
-  robots: {
-    index: true,
-    follow: true
+    type: 'website',
+    locale: 'de_DE',
+    url: 'https://schaedlingsbekaempfung-heinz.de',
+    siteName: 'Schädlingsbekämpfung Heinz',
+    images: [{
+      url: '/images/og-image.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Schädlingsbekämpfung Heinz'
+    }]
   }
 }
 

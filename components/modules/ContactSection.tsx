@@ -13,10 +13,10 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold text-primary">
-                24/7 Rohrreinigung Notdienst
+                24/7 Schädlingsbekämpfung Notdienst
               </h2>
               <p className="text-muted-foreground text-lg">
-                Verstopfung? Wir sind rund um die Uhr für Sie da und in 30 Minuten vor Ort.
+                Schädlingsbefall? Wir sind rund um die Uhr für Sie da und in 30 Minuten vor Ort.
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export default function ContactSection() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="flex-1">
-                <a href="mailto:info@rohrreinigung.de">
+                <a href="mailto:info@schaedlingsbekaempfung-heinz.de">
                   <Mail className="mr-2 h-5 w-5" />
                   E-Mail senden
                 </a>
@@ -57,7 +57,7 @@ export default function ContactSection() {
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
                 src="/images/support.png"
-                alt="Rohrreinigung Kundenservice"
+                alt="Schädlingsbekämpfung Kundenservice"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -67,7 +67,7 @@ export default function ContactSection() {
             <div className="grid grid-cols-2 gap-4">
               {trustElements.map((element, index) => (
                 <div key={index} className="text-center p-4 bg-muted rounded-lg">
-                  <div className="text-2xl font-bold text-primary mb-1">
+                  <div className="text-2xl font-bold text-primary">
                     {element.value}
                   </div>
                   <div className="text-sm text-muted-foreground">
@@ -104,6 +104,6 @@ const contactInfo = [
 const trustElements = [
   { value: "30 Min", label: "Reaktionszeit" },
   { value: "24/7", label: "Erreichbarkeit" },
-  { value: "100%", label: "Festpreisgarantie" },
+  { value: "100%", label: "Erfolgsgarantie" },
   { value: "4.9★", label: "Kundenbewertung" }
 ]

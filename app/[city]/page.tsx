@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+
 import { cities, getCityData } from '@/lib/cities'
 
 import Hero from '@/components/modules/Hero'
@@ -11,7 +12,12 @@ import InstallationSection from '@/components/modules/EmergencySection'
 import ServicesSection from '@/components/modules/ServiceSection'
 import FAQ from '@/components/modules/FAQ'
 
-
+// Definiere den Props Type
+type PageProps = {
+  params: {
+    city: string
+  }
+}
 /**
  * 1) SSG: Alle möglichen Routen
  */
@@ -22,17 +28,15 @@ export async function generateStaticParams() {
 /**
  * 2) Metadaten asynchron
  */
-export async function generateMetadata({ params }: { params: { city: string } }): Promise<Metadata> {
-  const cityData = getCityData(params.city)
-  if (!cityData) {
-    return {
-      title: 'Stadt nicht gefunden',
-      description: 'Die gesuchte Stadt wurde nicht gefunden',
-    }
-  }
+export function generateMetadata({ params }: PageProps): Metadata {
+  const cityName = params.city.charAt(0).toUpperCase() + params.city.slice(1)
+  
   return {
-    title: `Rohrreiniger Notdienst ${cityData.name} | 24/7 Elektro-Service`,
-    description: `24h Rohrreiniger Notdienst in ${cityData.name}. ✓ Festpreise ✓ Qualifizierte Mitarbeiter ✓ In 15 Min vor Ort ➤ Jetzt anrufen!`,
+    title: `Schädlingsbekämpfung ${cityName} | 24/7 Notdienst`,
+    description: `Professionelle Schädlingsbekämpfung in ${cityName} ✓ 24/7 Notdienst ✓ 30 Min vor Ort ✓ Festpreisgarantie ✓ Alle Schädlinge ➤ Jetzt anfragen!`,
+    alternates: {
+      canonical: `https://schaedlingsbekaempfung-heinz.de/${params.city}`
+    }
   }
 }
 

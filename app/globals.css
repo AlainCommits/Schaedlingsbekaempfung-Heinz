@@ -15,37 +15,36 @@ body {
         --navbar-height: 6.5rem; /* 104px desktop */
       }
     
-      --gradient: #003973;
-    --background: 223 100% 98.46%;
-    --foreground: 223 10% 0.92%;
+      --gradient: #c21500;
 
-    --muted: 223 10% 92.3%;
-    --muted-foreground: 223 5% 42.3%;
-
-    --popover: 223 75% 92.3%;
-    --popover-foreground: 223 10% 1.1500000000000001%;
-
-    --card: 223 75% 92.3%;
-    --card-foreground: 223 10% 1.1500000000000001%;
-
-    --border: 223 15% 89.92%;
-    --input: 223 15% 89.92%;
-
-    --primary: 223 100% 23%;
-    --primary-foreground: 223 2% 92.3%;
-
-    --secondary: 223 73% 85.37%;
-    --secondary-foreground: 223 7% 12.3%;
-
-    --accent: 223 73% 85.37%;
-    --accent-foreground: 223 7% 12.3%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --ring: 223 100% 23%;
-
-    --radius: 0.5rem;
+      --background: 7 65% 3.04%;
+      --foreground: 7 10% 96.9%;
+  
+      --muted: 7 12% 13.68%;
+      --muted-foreground: 7 10% 53.8%;
+  
+      --popover: 7 0% 26.6%;
+      --popover-foreground: 7 10% 96.9%;
+  
+      --card: 7 0% 26.6%;
+      --card-foreground: 7 10% 96.9%;
+  
+      --border: 7 12% 13.68%;
+      --input: 7 12% 13.68%;
+  
+      --primary: 7 100% 38%;
+      --primary-foreground: 7 10% 96.9%;
+  
+      --secondary: 7 12% 13.68%;
+      --secondary-foreground: 7 10% 96.9%;
+  
+      --accent: 7 12% 13.68%;
+      --accent-foreground: 7 10% 96.9%;
+  
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 7 10% 96.9%;
+  
+      --ring: 7 100% 38%;
   }
   .dark {
     --background: 0 0% 3.9%;

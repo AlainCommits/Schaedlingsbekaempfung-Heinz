@@ -1,7 +1,7 @@
 // components/modules/ServiceSection.tsx
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Wrench, Droplet, Search, Clock, Shield, Ban } from 'lucide-react'
+import { Bug, Shield, Clock, Rat, BugOff, Zap } from 'lucide-react'
 
 export default function ServicesSection() {
   return (
@@ -12,11 +12,11 @@ export default function ServicesSection() {
             Unsere Leistungen
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Professionelle Rohrreinigung
+            Professionelle Schädlingsbekämpfung
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Von der einfachen Verstopfung bis zur komplexen Kanalsanierung - 
-            wir bieten Ihnen umfassende Lösungen für alle Rohrprobleme.
+            Von der Rattenbekämpfung bis zur Bettwanzenbeseitigung - 
+            wir bieten Ihnen umfassende Lösungen für alle Schädlingsprobleme.
           </p>
         </div>
 
@@ -50,63 +50,63 @@ export default function ServicesSection() {
 
 const services = [
   {
-    icon: Wrench,
-    title: "Rohrreinigung & Verstopfungen",
-    description: "Schnelle Hilfe bei verstopften Abflüssen und Rohren",
+    icon: Rat,
+    title: "Rattenbekämpfung",
+    description: "Effektive Bekämpfung von Ratten und Mäusen",
     features: [
-      "Sofortige Verfügbarkeit",
-      "Modernste Werkzeuge",
-      "Nachhaltige Lösung",
+      "Professionelle Köderauslage",
+      "Nachhaltige Beseitigung",
+      "Präventive Maßnahmen",
     ]
   },
   {
-    icon: Search,
-    title: "Kamerainspektion",
-    description: "Professionelle Rohruntersuchung mit modernster Kameratechnik",
+    icon: Bug,
+    title: "Bettwanzenbekämpfung",
+    description: "Gründliche Beseitigung von Bettwanzen",
     features: [
-      "Digitale Aufzeichnung",
-      "Schadensanalyse",
-      "Präzise Ortung",
+      "Thermische Behandlung",
+      "Chemische Behandlung",
+      "Nachkontrolle",
+    ]
+  },
+  {
+    icon: BugOff,
+    title: "Kakerlakenbekämpfung",
+    description: "Professionelle Bekämpfung von Kakerlaken",
+    features: [
+      "Sofortige Maßnahmen",
+      "Langfristige Lösung",
+      "Präventivbehandlung",
+    ]
+  },
+  {
+    icon: Zap,
+    title: "Wespenbekämpfung",
+    description: "Sichere Entfernung von Wespennestern",
+    features: [
+      "Schnelle Hilfe",
+      "Fachgerechte Entfernung",
+      "Präventive Beratung",
+    ]
+  },
+  {
+    icon: Shield,
+    title: "Schädlingsprävention",
+    description: "Vorbeugende Maßnahmen gegen Schädlingsbefall",
+    features: [
+      "Regelmäßige Kontrollen",
+      "Beratungsservice",
+      "Langfristiger Schutz",
     ]
   },
   {
     icon: Clock,
     title: "24/7 Notdienst",
-    description: "Rund um die Uhr für Notfälle verfügbar",
+    description: "Schnelle Hilfe bei akutem Schädlingsbefall",
     features: [
-      "Schnelle Reaktionszeit",
+      "30 Minuten Reaktionszeit",
+      "Rund um die Uhr",
       "Faire Festpreise",
-      "Sofort-Hilfe",
-    ]
-  },
-  {
-    icon: Shield,
-    title: "Rohrsanierung",
-    description: "Nachhaltige Reparatur und Sanierung von Rohrleitungen",
-    features: [
-      "Ohne Aufgrabung",
-      "Langlebige Lösung",
-      "Kosteneffizient",
-    ]
-  },
-  {
-    icon: Droplet,
-    title: "Kanalreinigung",
-    description: "Professionelle Reinigung von Abwasserkanälen",
-    features: [
-      "Hochdruck-Spülung",
-      "Verstopfungsbeseitigung",
-      "Wartungsservice",
-    ]
-  },
-  {
-    icon: Ban,
-    title: "Verstopfungsprävention",
-    description: "Vorbeugende Maßnahmen gegen Rohrverstopfungen",
-    features: [
-      "Regelmäßige Wartung",
-      "Beratungsservice",
-      "Langfristiger Schutz",
     ]
   }
 ]
