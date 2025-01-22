@@ -15,36 +15,36 @@ body {
         --navbar-height: 6.5rem; /* 104px desktop */
       }
     
-      --gradient: #c21500;
+      --gradient: #FFE000;
 
-      --background: 7 65% 3.04%;
-      --foreground: 7 10% 96.9%;
-  
-      --muted: 7 12% 13.68%;
-      --muted-foreground: 7 10% 53.8%;
-  
-      --popover: 7 0% 26.6%;
-      --popover-foreground: 7 10% 96.9%;
-  
-      --card: 7 0% 26.6%;
-      --card-foreground: 7 10% 96.9%;
-  
-      --border: 7 12% 13.68%;
-      --input: 7 12% 13.68%;
-  
-      --primary: 7 100% 38%;
-      --primary-foreground: 7 10% 96.9%;
-  
-      --secondary: 7 12% 13.68%;
-      --secondary-foreground: 7 10% 96.9%;
-  
-      --accent: 7 12% 13.68%;
-      --accent-foreground: 7 10% 96.9%;
-  
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 7 10% 96.9%;
-  
-      --ring: 7 100% 38%;
+    --background: 56 65% 4%;
+    --foreground: 56 10% 97.5%;
+
+    --muted: 56 16% 33.5%;
+    --muted-foreground: 56 10% 55%;
+
+    --popover: 56 45% 6.5%;
+    --popover-foreground: 56 10% 97.5%;
+
+    --card: 56 45% 6.5%;
+    --card-foreground: 56 10% 97.5%;
+
+    --border: 56 16% 33.5%;
+    --input: 56 16% 33.5%;
+
+    --primary: 56 100% 50%;
+    --primary-foreground: 56 10% 5%;
+
+    --secondary: 56 16% 33.5%;
+    --secondary-foreground: 56 10% 97.5%;
+
+    --accent: 56 16% 33.5%;
+    --accent-foreground: 56 10% 97.5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 56 10% 97.5%;
+
+    --ring: 56 100% 50%;
   }
   .dark {
     --background: 0 0% 3.9%;
