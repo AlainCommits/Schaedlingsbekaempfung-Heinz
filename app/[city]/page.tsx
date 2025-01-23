@@ -1,7 +1,10 @@
+//Users/alonondanse/Schädlingsbekämpfung/app/[city]/page.tsx
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
-import { cities, getCityData } from '@/lib/cities'
+// Remove the import of hardcoded cities
+// import { cities, getCityData } from '@/lib/cities'
+import { fetchLocations } from '@/lib/api'
 
 import Hero from '@/components/modules/Hero'
 import AboutSection from '@/components/modules/AboutSection'
@@ -12,22 +15,26 @@ import InstallationSection from '@/components/modules/EmergencySection'
 import ServicesSection from '@/components/modules/ServiceSection'
 import FAQ from '@/components/modules/FAQ'
 
-// Definiere den Props Type
 type PageProps = {
   params: {
     city: string
   }
 }
-/**
- * 1) SSG: Alle möglichen Routen
- */
+
+// Update generateStaticParams to use the API
 export async function generateStaticParams() {
-  return cities.map((c) => ({ city: c.slug }))
+  const cities = await fetchLocations()
+  return cities.map((city) => ({
+    city: city.slug
+  }))
 }
 
-/**
- * 2) Metadaten asynchron
- */
+// Update getCityData function
+async function getCityData(slug: string) {
+  const cities = await fetchLocations()
+  return cities.find((city) => city.slug === slug)
+}
+
 export function generateMetadata({ params }: PageProps): Metadata {
   const cityName = params.city.charAt(0).toUpperCase() + params.city.slice(1)
   
@@ -40,11 +47,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
   }
 }
 
-/**
- * 3) Page asynchron
- */
 export default async function CityPage({ params }: { params: { city: string } }) {
-  const cityData = getCityData(params.city)
+  const cityData = await getCityData(params.city)
 
   if (!cityData) {
     notFound()
